@@ -1,8 +1,12 @@
 ---
-title: "Visualization page"
-date: 2024-04-02
-tags: [Data Visualization]
-description: "This is a showcase of interactive visualizations of building usage."
+name: HW8 Visualization Project
+tools: [Python, HTML, vega-lite]
+description: This is a "showcase" project that uses vega-lite for interactive viz for building usages!
+custom_js:
+  - vega.min
+  - vega-lite.min
+  - vega-embed.min
+  - justcharts
 ---
 
 ## Example Including Vega-Lite
