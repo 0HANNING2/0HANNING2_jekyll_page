@@ -8,5 +8,14 @@ description: "This is a showcase of interactive visualizations of building usage
 
 For the visualization 1, I did the bar chart to visualize the building counts v. the congress dist. Because this is a plot to show the number of buildings of different congress dist, which is showing the sum/counts, so the bar chart is clear for audiences to see. The encoding type are different for x axis and y axis, for x axis, the variable is “Congress Dist”, which have number from 0 to 18, it is not regarded as quantitative because it is discrete and is is a symbol variable so I encoded them as ordinal, which could make the plot’s x axis more easy to read. I did not do a lot of transformations for plot 1, but I pre-processed the data which could be used more clearly. I used groupby() method to group the original big building dataset by the congress dist. Then I used count() method to count the number of buildings of each congress dist and then make them as two columns to the new dataframe called district_count. Then I used the new dataframe as the data to make the visualization 1. Also, for the interactive part, this viz 1 is quite basic for panning and zooming, also, this viz 1 enables users to hover on one bar and by the tooltip, once users hover on the bar, it will display the congress dist number and also the building counts.
 
+```
+<div id="vis1"></div>
+<script type="text/javascript">
+  fetch('https://raw.githubusercontent.com/username/repository/branch/assets/json/viz1.json')
+    .then(response => response.json())
+    .then(vegaSpec => vegaEmbed('#vis1', vegaSpec, { "actions": false }))
+    .catch(error => console.error(error));
+</script>
+```
 
 For visualization 2, it is quite an “upgrade” of viz 1. I changed it to be more specifically. It is also quite similar to what I did for HW7, but the difference is I group the data by congress dist, which is a variable that I did not include in HW7. And I added the dropdown for different usage descriptions, in order to provide a more specific interaction between the plot and users. Users could select the dropdown’s usage and once users change the selection, the plot also change accordingly, other than this, it is generally the same logic with visualization 1. The reason why I choose bar plot here is also the same to the viz 1, because this is an aggregation of different congress dist, so the bar plot is one of the most suitable method to show. The encoding types are also quite the same, the count() here is the same as the number of buildings in viz1. And the congress dist is ordinal. The interactive way here does not include panning and zooming, but same to the viz 1, it has the hover-selection interaction. 
