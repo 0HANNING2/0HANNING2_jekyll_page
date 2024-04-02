@@ -2,7 +2,7 @@
 title: "Visualization page"
 date: 2024-04-02
 tags: [Data Visualization]
-description: "This post contains interactive visualizations of building usage."
+description: "This is a showcase of interactive visualizations of building usage."
 ---
 
 
