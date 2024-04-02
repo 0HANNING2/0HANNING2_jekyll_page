@@ -1,30 +1,24 @@
 ---
-title: The Hello World of Blogs
-tags: [Technology, Blogging]
-style: fill
-color: secondary
-description: This is a blog post to get you started.
+title: "Your Visualization Title"
+date: 2024-04-02
+tags: [Data Visualization]
+description: "This post contains interactive visualizations of building usage."
 ---
 
-Source: [portfolYOU](https://github.com/YoussefRaafatNasry/portfolYOU)
 
-This is me writing an intro to this blog post.  So introlicioius.
+For the visualization 1, I did the bar chart to visualize the building counts v. the congress dist. Because this is a plot to show the number of buildings of different congress dist, which is showing the sum/counts, so the bar chart is clear for audiences to see. The encoding type are different for x axis and y axis, for x axis, the variable is “Congress Dist”, which have number from 0 to 18, it is not regarded as quantitative because it is discrete and is is a symbol variable so I encoded them as ordinal, which could make the plot’s x axis more easy to read. I did not do a lot of transformations for plot 1, but I pre-processed the data which could be used more clearly. I used groupby() method to group the original big building dataset by the congress dist. Then I used count() method to count the number of buildings of each congress dist and then make them as two columns to the new dataframe called district_count. Then I used the new dataframe as the data to make the visualization 1. Also, for the interactive part, this viz 1 is quite basic for panning and zooming, also, this viz 1 enables users to hover on one bar and by the tooltip, once users hover on the bar, it will display the congress dist number and also the building counts.
 
-## 1. Here is one thing I want to say
+<div id="visualization"></div>
+<script type="text/javascript">
+  fetch('path') 
+    .then(response => response.json())
+    .then(vegaSpec => {
+      vegaEmbed('#visualization', vegaSpec);
+    })
+    .catch(err => console.error(err));
+</script>
 
-This is maybe an important thing, and, at the very least it is first.
 
-## 2. Another thing
-
-I am now talking about a second thing, probably also good.
-
-## 3. A third thing
-
-We are now getting into the weeds of things that I am saying.  It is probably unlikely someone has made it thus far.
-
-## 4. Thing #4.
-
-At this point, you are probably no longer into me listing off things.  Let's put in an image to placate the reader:
 
 ![corg](https://media.istockphoto.com/photos/welsh-corgi-picture-id962032196?k=20&m=962032196&s=170667a&w=0&h=NhIyQdJgVw0cw_EeLtP3LcLExLuiAWPwzL6_WsRKUfQ=)
 
