@@ -10,7 +10,7 @@ For the visualization 1, I did the bar chart to visualize the building counts v.
 
 <div id="visualization"></div>
 <script type="text/javascript">
-  fetch('path') 
+  fetch('https://github.com/0HANNING2/0HANNING2_jekyll_page/blob/388c7c446512ddaa10df60fda6dbb98ac953b7e5/assets/json/viz1.json') 
     .then(response => response.json())
     .then(vegaSpec => {
       vegaEmbed('#visualization', vegaSpec);
