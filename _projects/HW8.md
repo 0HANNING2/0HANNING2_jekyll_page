@@ -16,4 +16,7 @@ For the visualization 1, I did the bar chart to visualize the building counts v.
     .catch(error => console.error(error));
 </script>
 
+
+
+
 For visualization 2, it is quite an “upgrade” of viz 1. I changed it to be more specifically. It is also quite similar to what I did for HW7, but the difference is I group the data by congress dist, which is a variable that I did not include in HW7. And I added the dropdown for different usage descriptions, in order to provide a more specific interaction between the plot and users. Users could select the dropdown’s usage and once users change the selection, the plot also change accordingly, other than this, it is generally the same logic with visualization 1. The reason why I choose bar plot here is also the same to the viz 1, because this is an aggregation of different congress dist, so the bar plot is one of the most suitable method to show. The encoding types are also quite the same, the count() here is the same as the number of buildings in viz1. And the congress dist is ordinal. The interactive way here does not include panning and zooming, but same to the viz 1, it has the hover-selection interaction. 
