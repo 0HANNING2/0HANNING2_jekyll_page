@@ -2,6 +2,11 @@
 name: HW8 Visualization Project
 tools: [Python, HTML, vega-lite]
 description: This is a "showcase" project that uses vega-lite for interactive viz for building usages!
+custom_js:
+  - vega.min
+  - vega-lite.min
+  - vega-embed.min
+  - justcharts
 ---
 
 ## Building Usage Analysis
