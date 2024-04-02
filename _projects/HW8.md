@@ -1,5 +1,5 @@
 ---
-title: "Visualization 1"
+title: "Visualization page"
 date: 2024-04-02
 tags: [Data Visualization]
 description: "This post contains interactive visualizations of building usage."
